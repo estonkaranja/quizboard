@@ -3,42 +3,51 @@
 
 <head>
   <title>Javascript QUiz</title>
-</head>
-
-<body>
+  <link </head> <body>
   <div id="container">
     <div id="header">
       <h1>Javascript Quiz</h1>
     </div>
-    <div id="main">
-      <form id="form1">
-        <section>
-          <p>Inside which HTML element do we put the Javascript?</p>
-        </section>
-        <section>
-          <p>Where is the correct place to insert a Javascript file?</p>
-        </section>
-        <section>
-          <p>The external Javascript file must be contained in the script tag.</p>
-        </section>
-        <section>
-          <p>How do we create a function in Javascript?</p>
-        </section>
-        <section>
-          <p>How do we write an IF statement for executing some code if "i"is NOT equal to 5?</p>
-        </section>
-        <section>
-          <p>How does a FOR loop start?</p>
-        </section>
-        <section>
-          <p>What is the correct way to write a javascript array?</p>
-        </section>
-        <section>
-          <p>Javascript is the same as Java.</p>
-        </section>
-    </div>
+    <form id="form1">
+      <section>
+        <p>1.Inside which HTML element do we put the Javascript file?</p><br>
+        <input type="radio" name="question1" value="A">Javascript tag<br>
+        <input type="radio" name="question1" value="B">scripting tag<br>
+        <input type="radio" name="question1" value="C">script tag<br>
+        <input type="radio" name="question1" value="D">js tag<br>
+      </section>
+
+      <section>
+        <p>2.How do you write an IF statement for executing some code if "i" is NOT equal to 5?</p><br>
+        <input type="radio" name="question2" value="A">if i<>5<br>
+          <input type="radio" name="question2" value="B">if i=!5<br>
+          <input type="radio" name="question2" value="C">if(i<>5)<br>
+            <input type="radio" name="question2" value="D">if(i!=5)<br>
+      </section>
+
+      <section>
+        <p>3.The external Javascript file must be contained in the script tag.</p><br>
+        <input type="radio" name="question3" value="A">True<br>
+        <input type="radio" name="question3" value="B">False<br>
+      </section>
+
+      <section>
+        <p>4.What is the correct way to write a javascript array?</p><br>
+        <input type="radio" name="question4" value="A">var colors="red", "green", "blue"<br>
+        <input type="radio" name="question4" value="B">(1:"red", 2:"green", 3:"blue")<br>
+        <input type="radio" name="question4" value="C">["red", "green", "blue"]<br>
+        <input type="radio" name="question4" value="D">1 =("red"), 2 =("green"), 3 =("blue")<br>
+      </section>
+
+      <section>
+        <p>5.Javascript is the same as Java.</p><br>
+        <input type="radio" name="question5" value="A">True<br>
+        <input type="radio" name="question5" value="B">False<br><br><br>
+      </section>
+      <button onclick="returnScore()">View Results</button>
     </form>
   </div>
-</body>
+  <p>Your score is:<span id="grade">_</span></p>
+  </body>
 
 </html>
