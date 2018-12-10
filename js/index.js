@@ -56,7 +56,7 @@ function calcScore() {
     document.getElementById("answer").value = "You got " + score;
   } else if (score === 75) {
     document.getElementById("answer").value = "You got " + score;
-  } else if (score === 100){
+  } else if (score === 100) {
     document.getElementById("answer").value = "You got " + score;
   }
 
