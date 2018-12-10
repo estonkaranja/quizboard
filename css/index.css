@@ -1,0 +1,17 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+
+form {
+  font-size: 20px;
+}

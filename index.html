@@ -2,52 +2,83 @@
 <html>
 
 <head>
-  <title>Javascript QUiz</title>
-  <link </head> <body>
-  <div id="container">
-    <div id="header">
-      <h1>Javascript Quiz</h1>
-    </div>
-    <form id="form1">
-      <section>
-        <p>1.Inside which HTML element do we put the Javascript file?</p><br>
-        <input type="radio" name="question1" value="A">Javascript tag<br>
-        <input type="radio" name="question1" value="B">scripting tag<br>
-        <input type="radio" name="question1" value="C">script tag<br>
-        <input type="radio" name="question1" value="D">js tag<br>
+  <title>
+    Javascript Quiz
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+  <div class="jumbotron" id="container">
+    <header>
+      <div id="heading">Javascript Quiz
+      </div>
+    </header>
+    <form id="quiz">
+      <section class="quizform" id="q1">
+        <p>
+          <h3>1.Inside which HTML element do we put the Javascript file?</h3>
+        </p>
+        <input type="radio" name="question1" value="A">&ltJavascript&gt<br>
+        <input type="radio" name="question1" value="B">&ltscripting&gt<br>
+        <input type="radio" name="question1" value="C">&ltscript&gt<br>
+        <input type="radio" name="question1" value="D">&ltjs&gt<br><br>
+
       </section>
 
-      <section>
-        <p>2.How do you write an IF statement for executing some code if "i" is NOT equal to 5?</p><br>
-        <input type="radio" name="question2" value="A">if i<>5<br>
-          <input type="radio" name="question2" value="B">if i=!5<br>
-          <input type="radio" name="question2" value="C">if(i<>5)<br>
-            <input type="radio" name="question2" value="D">if(i!=5)<br>
+      <section class="quizform" id="q2">
+        <p>
+          <h3>2.How do you write an IF statement for executing some code if "i" is NOT equal to 5?</h3>
+        </p><br>
+        <input type="radio" name="question2" value="A">if (i&lt&gt5)<br>
+        <input type="radio" name="question2" value="B">if (i=!5)<br>
+        <input type="radio" name="question2" value="C">if(i&lt5)<br>
+        <input type="radio" name="question2" value="D">if(i!=5)<br><br>
+
       </section>
 
-      <section>
-        <p>3.The external Javascript file must be contained in the script tag.</p><br>
+      <section class="quizform" id="q3">
+        <p>
+          <h3>3.The external Javascript file must be contained in the script tag.</h3>
+        </p><br>
         <input type="radio" name="question3" value="A">True<br>
-        <input type="radio" name="question3" value="B">False<br>
+        <input type="radio" name="question3" value="B">False<br><br>
       </section>
 
-      <section>
-        <p>4.What is the correct way to write a javascript array?</p><br>
+      <section class="quizform" id="q4">
+        <p>
+          <h3>4.What is the correct way to write a javascript array?</h3>
+        </p><br>
         <input type="radio" name="question4" value="A">var colors="red", "green", "blue"<br>
         <input type="radio" name="question4" value="B">(1:"red", 2:"green", 3:"blue")<br>
         <input type="radio" name="question4" value="C">["red", "green", "blue"]<br>
-        <input type="radio" name="question4" value="D">1 =("red"), 2 =("green"), 3 =("blue")<br>
+        <input type="radio" name="question4" value="D">1 =("red"), 2 =("green"), 3 =("blue")<br><br>
       </section>
 
-      <section>
-        <p>5.Javascript is the same as Java.</p><br>
+      <section class="quizform" id="q5">
+        <p>
+          <h3>5.Javascript is the same as Java.</h3>
+        </p><br>
         <input type="radio" name="question5" value="A">True<br>
         <input type="radio" name="question5" value="B">False<br><br><br>
+
       </section>
-      <button onclick="returnScore()">View Results</button>
+      <button type="button" id="submit" onclick="calcScore()">View Results</button>
     </form>
-  </div>
-  <p>Your score is:<span id="grade">_</span></p>
-  </body>
+    <footer>
+      <div>
+        <h3>Total Questions:5</h3>
+      </div>
+    </footer>
+
+    <div id="after_submit">
+      <p> <output id="answer"> </output>  </p>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</div>
 
 </html>
