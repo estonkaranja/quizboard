@@ -1,48 +1,48 @@
 function calcScore() {
 
-  var Q1 = document.getElementsByName("question1");
-  var Q2 = document.getElementsByName("question2");
-  var Q3 = document.getElementsByName("question3");
-  var Q4 = document.getElementsByName("question4");
-  var Q5 = document.getElementsByName("question5");
+  var questionOne = document.getElementsByName("question1");
+  var questionTwo = document.getElementsByName("question2");
+  var questionThree = document.getElementsByName("question3");
+  var questionFour = document.getElementsByName("question4");
+  var questionFive = document.getElementsByName("question5");
   var score = 0;
 
-  for (var i = 0, length = Q1.length; i < length; i++) {
-    if (Q1[i].checked) {
-      var ans1 = Q1[i].value
-      if (Q1[i].value === 'C') {
+  for (var i = 0, length = questionOne.length; i < length; i++) {
+    if (questionOne[i].checked) {
+      var ans1 = questionOne[i].value
+      if (questionOne[i].value === 'C') {
         score += 25
       }
     }
   }
-  for (var i = 0, length = Q2.length; i < length; i++) {
-    if (Q2[i].checked) {
-      var ans2 = Q2[i].value
-      if (Q2[i].value === 'D') {
+  for (var i = 0, length = questionTwo.length; i < length; i++) {
+    if (questionTwo[i].checked) {
+      var ans2 = questionTwo[i].value
+      if (questionTwo[i].value === 'D') {
         score += 25
       }
     }
   }
-  for (var i = 0, length = Q3.length; i < length; i++) {
-    if (Q3[i].checked) {
-      var ans3 = Q3[i].value;
-      if (Q3[i].value === 'A') {
+  for (var i = 0, length = questionThree.length; i < length; i++) {
+    if (questionThree[i].checked) {
+      var ans3 = questionThree[i].value;
+      if (questionThree[i].value === 'A') {
         score += 25
       }
     }
   }
-  for (var i = 0, length = Q4.length; i < length; i++) {
-    if (Q4[i].checked) {
-      var ans4 = Q4[i].value
-      if (Q4[i].value === 'C') {
+  for (var i = 0, length = questionFour.length; i < length; i++) {
+    if (questionFour[i].checked) {
+      var ans4 = questionFour[i].value
+      if (questionFour[i].value === 'C') {
         score += 25
       }
     }
   }
-  for (var i = 0, length = Q5.length; i < length; i++) {
-    if (Q5[i].checked) {
-      var ans5 = Q5[i].value
-      if (Q5[i].value === 'C') {
+  for (var i = 0, length = questionFive.length; i < length; i++) {
+    if (questionFive[i].checked) {
+      var ans5 = questionFive[i].value
+      if (questionFive[i].value === 'C') {
         score += 25
       }
     }
