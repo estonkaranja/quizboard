@@ -9,7 +9,7 @@
  This is a simple,responsive website that contains simple questions on Javascript that can help beginners in Javascript to revise on simple Javascript concepts.
 
 
-![alt text](http://images/image.png)
+![alt text](http://Documents/Moringa-school-projects/quizboard/images/image.png)
 ## Working of the website.
 
 The projects runs on a browser.You can use a smartphone,desktop or tablet or any device that works on a browser.
