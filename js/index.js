@@ -69,7 +69,7 @@ $(document).ready(function() {
 })
 $(document).ready(function() {
   $("#next").click(function() {
-    $("#q1,footer").show(1000);
+    $("#q1,footer").show(2000);
     $("#heading,#q2,#q3,#q4,#q5,#submit").hide();
   })
 })
