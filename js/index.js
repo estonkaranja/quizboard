@@ -99,7 +99,7 @@ $(document).ready(function() {
 })
 $(document).ready(function() {
   $("#submit").click(function() {
-    $("#answer").show();
+    $("#answer").show(2000);
     $("#q1,#q2,#q3,#q4,#q5,#submit,footer").hide();
   })
 })
