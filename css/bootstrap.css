@@ -67,7 +67,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  
+
 }
 
 [tabindex="-1"]:focus {
@@ -560,7 +560,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: white;
+  height: 160vh;
 }
+
 
 @media (min-width: 576px) {
   .container {

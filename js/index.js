@@ -63,3 +63,37 @@ function calcScore() {
   event.preventDefault();
 
 }
+
+$(document).ready(function() {
+  $("#q2,#q3,#q4,#q5,#submit").hide();
+})
+$(document).ready(function() {
+  $("#next1").click(function() {
+    $("#q2").show();
+    $("#q1,#q3,#q4,#q5,#submit").hide();
+  })
+})
+$(document).ready(function() {
+  $("#next2").click(function() {
+    $("#q3").show();
+    $("#q1,#q2,#q4,#q5,#submit").hide();
+  })
+})
+$(document).ready(function() {
+  $("#next3").click(function() {
+    $("#q4").show();
+    $("#q1,#q2,#q3,#q5,#submit").hide();
+  })
+})
+$(document).ready(function() {
+  $("#next4").click(function() {
+    $("#q5,#submit").show();
+    $("#q1,#q2,#q3,#q4").hide();
+  })
+})
+$(document).ready(function() {
+  $("#submit").click(function() {
+    $("#answer").show();
+    $("#q1,#q2,#q3,#q4,#q5").hide();
+  })
+})
