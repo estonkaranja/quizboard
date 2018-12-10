@@ -65,35 +65,41 @@ function calcScore() {
 }
 
 $(document).ready(function() {
-  $("#q2,#q3,#q4,#q5,#submit").hide();
+  $("#q1,#q2,#q3,#q4,#q5,#submit,footer").hide();
+})
+$(document).ready(function() {
+  $("#next").click(function() {
+    $("#q1,footer").show();
+    $("#heading,#q2,#q3,#q4,#q5,#submit").hide();
+  })
 })
 $(document).ready(function() {
   $("#next1").click(function() {
-    $("#q2").show();
+    $("#q2,footer").show();
     $("#q1,#q3,#q4,#q5,#submit").hide();
   })
 })
 $(document).ready(function() {
   $("#next2").click(function() {
-    $("#q3").show();
+    $("#q3,footer").show();
     $("#q1,#q2,#q4,#q5,#submit").hide();
   })
 })
 $(document).ready(function() {
   $("#next3").click(function() {
-    $("#q4").show();
+    $("#q4,footer").show();
     $("#q1,#q2,#q3,#q5,#submit").hide();
   })
 })
 $(document).ready(function() {
   $("#next4").click(function() {
-    $("#q5,#submit").show();
+    $("#q5,#submit,footer").show();
     $("#q1,#q2,#q3,#q4").hide();
   })
 })
 $(document).ready(function() {
   $("#submit").click(function() {
     $("#answer").show();
-    $("#q1,#q2,#q3,#q4,#q5").hide();
+    $("#q1,#q2,#q3,#q4,#q5,#submit,footer").hide();
   })
 })
